@@ -111,6 +111,18 @@ const englishTranslations = {
   'El Ministerio de Salud argentino recomienda una mamografía cada 1 o 2 años entre los 50 y 69 años, sin síntomas ni antecedentes personales o familiares de cáncer de mama, junto con una evaluación profesional.': 'The Argentine Ministry of Health recommends a mammogram every 1 or 2 years for those aged 50 to 69 with no symptoms or personal or family history of breast cancer, along with a clinical assessment.',
   'Antes de los 50, después de los 69 o si tenés antecedentes u otros factores de riesgo, el plan es individual. Si notás un cambio, no esperes al próximo control.': 'Before age 50, after 69, or if you have a personal or family history or other risk factors, your plan should be individualized. If you notice a change, do not wait until your next checkup.',
 
+  'Preguntas frecuentes': 'Frequently asked questions',
+  '¿Cada cuánto puedo revisarlas?': 'How often should I check my breasts?',
+  'Podés tomar una vez al mes como recordatorio. Si menstruás, después del período suelen estar menos sensibles. Lo importante es conocer lo habitual en vos y consultar ante un cambio nuevo.': 'About once a month can be a useful reminder. If you have periods, your breasts are usually less tender afterward. Get familiar with what is usual for you and report new changes.',
+  '¿Con qué dedos y cuánta presión?': 'Which fingers and how much pressure?',
+  'Usá la parte plana de las yemas del índice, medio y anular. En cada zona, probá presión suave, media y firme, sin que duela. Si tenés dudas, pedile a un profesional que te muestre.': 'Use the flat pads of your index, middle and ring fingers. At each spot, use light, medium and firm pressure without causing pain. If you are unsure, ask a healthcare professional to show you.',
+  '¿Es normal que mis mamas sean diferentes?': 'Is it normal for my breasts to be different?',
+  'Sí, pueden tener distintos tamaños o formas y cambiar con el ciclo o las etapas de la vida. Consultá si aparece una diferencia nueva o algo que no es habitual en vos.': 'Yes. Breasts can differ in size or shape and change with your cycle or stage of life. Seek advice if you notice a new difference or something unusual for you.',
+  '¿Consulto aunque no me duela?': 'Should I seek advice even if it does not hurt?',
+  'Sí. Un cambio nuevo merece consulta aunque no duela o tu última mamografía haya sido normal. La mayoría de los cambios no son cáncer, pero un profesional tiene que evaluarlos.': 'Yes. Have a new change checked even if it is painless or your last mammogram was normal. Most breast changes are not cancer, but a healthcare professional should assess them.',
+  'Fuentes:': 'Sources:',
+  'Instituto Nacional del Cáncer de EE. UU.': 'US National Cancer Institute',
+
   'Sobre esta guía y sus fuentes': 'About this guide and its sources',
   'Contenido educativo, no diagnóstico. El recorrido digital no evalúa tu salud ni certifica que hayas realizado un examen. No recopilamos información médica.': 'This is educational content, not a diagnosis. The digital guide does not assess your health or certify that you have performed an examination. We do not collect medical information.',
   'Ministerio de Salud de Argentina · Edad y frecuencia de mamografías': 'Argentine Ministry of Health · Mammogram ages and frequency',
