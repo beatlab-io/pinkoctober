@@ -1,0 +1,10 @@
+{
+  "name": "pinkoctober",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beat breast-awareness interactive guide in Spanish and English",
+  "type": "module",
+  "scripts": {
+    "integrate": "node scripts/integrate.mjs"
+  }
+}
