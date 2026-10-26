@@ -1,40 +1,36 @@
 # Publicar Pink October en la web de Beat
 
-## Resultado esperado
+## Sitio actual
 
-La guía debe abrir en `https://beatlab.io/pinkoctober`, manteniendo intacta la portada de Beat. El repositorio contiene la guía completa; la ruta todavía necesita publicarse desde el proyecto que aloja `beatlab.io`.
+Flor confirmó la publicación en `https://beatlab.io/pink-october`, con guion, el 26 de octubre de 2026. Esta es la ruta que hay que conservar al actualizar. Subir archivos a este repositorio no publica por sí solo el sitio de Beat.
 
-## Para Flor
+## Actualización pendiente: mobile y FAQ
 
-1. Abrí el proyecto actual de Beat y sincronizá su última versión publicada. La copia identificada usa Vinext y el repositorio `florpvega/beat-studio`. Conservá su archivo `.openai/hosting.json` y sus permisos actuales.
-2. Descargá o cloná este repositorio, `beatlab-io/pinkoctober`.
-3. Desde la carpeta de este repositorio, ejecutá:
+El repositorio incluye la nueva versión con pantallas adaptadas al alto del celular y cuatro preguntas frecuentes bilingües. Está publicada en la guía de referencia: https://dale-play-octubre-rosa-anto.mauvegoose5.chatgpt.site. La actualización en el dominio de Beat debe publicarla Flor desde su proyecto actual.
 
-   ```sh
-   npm run integrate -- /ruta/absoluta/al/proyecto/beat-studio
-   ```
+1. Sincronizá la última versión publicada del proyecto de Beat (`florpvega/beat-studio`). Conservá su archivo `.openai/hosting.json`, permisos y ruta `/pink-october`.
+2. Reemplazá sólo `public/pink-october/app.js`, `style.css` y `translations.js` por los archivos correspondientes de `site/` en este repositorio.
+3. En el HTML de la ruta existente, cambiá `v=english-auto` por `v=mobile-faq-20261026` en los recursos para renovar la caché. Conservá los prefijos `/pink-october/`, la ruta y el canonical actuales. `site/index.html` contiene el documento de referencia con los nuevos identificadores de caché.
+4. Comprobá la compilación y TypeScript con `npm run build` y `npx tsc --noEmit`.
+5. Publicá el proyecto existente de Beat mediante su flujo habitual de ChatGPT Sites. No se necesita modificar portada, layout, permisos ni DNS.
 
-4. El instalador añade únicamente `app/pinkoctober/` y `public/pinkoctober/`. Si esas carpetas ya existen, se detiene para evitar sobrescribir cambios. No modifica la portada, el layout ni los DNS.
-5. En el proyecto de Beat, comprobá:
+No vuelvas a ejecutar el instalador original en esta actualización: `npm run integrate` crea la ruta alternativa `/pinkoctober` y se detiene si sus carpetas ya existen. Las instrucciones anteriores actualizan la ruta que Flor ya publicó.
 
-   ```sh
-   npm run build
-   npx tsc --noEmit
-   ```
+## Validación de esta actualización
 
-6. Revisá la guía y publicá el proyecto existente de Beat mediante su flujo habitual de ChatGPT Sites. Subir el código a GitHub por sí solo no actualiza ese dominio.
+Fuente de la guía: `2f26c77c80eed1bdec6b1b4de4c3ed9b8ce40f37`.
 
-## Comprobaciones de publicación
+- Los pasos 0, 1, 2, 3 y 5 entran completos en los tamaños móviles probados, en español e inglés: 320 × 568, 375 × 568, 390 × 664 y 430 × 800 px.
+- Las ilustraciones y los espacios se adaptan al alto disponible. Las señales de alerta conservan el scroll.
+- El cierre agrega cuatro FAQ plegadas por defecto, con fuentes NHS, Mayo Clinic y NCI. Abrir respuestas habilita el scroll normal: no se recorta contenido ni se bloquea el zoom.
+- Los acordeones funcionan con Enter sin cambiar de paso; sólo queda abierta una respuesta interna a la vez.
+- JavaScript y revisión de diferencias sin errores.
 
-- La portada `https://beatlab.io/` conserva su diseño y contenido.
-- `https://beatlab.io/pinkoctober` abre la guía completa y carga sus estilos y logo.
-- `?lang=es` muestra español y `?lang=en` muestra inglés. Sin parámetro, se usa el idioma principal del navegador.
-- El idioma se conserva al avanzar, retroceder y recargar un paso.
-- Señales de alerta muestra doce ilustraciones y permite descargar la imagen correspondiente al idioma.
-- El cierre reúne consulta y controles en una sola pantalla.
+## Comprobaciones al publicar en Beat
 
-## Validación realizada
-
-El 26 de octubre de 2026 se probó la integración en una copia aislada del proyecto de Beat, basada en `659e57e`. Build y TypeScript pasaron. La portada, la ruta nueva y sus cinco recursos respondieron correctamente. Se comprobó la navegación de la guía en inglés sin perder el idioma en la URL.
-
-La publicación en el dominio quedó pendiente para Flor por falta de acceso de publicación al proyecto de Beat desde la sesión que preparó esta entrega. No se modificó el DNS ni la web pública de Beat.
+- `https://beatlab.io/` conserva su diseño y contenido.
+- `https://beatlab.io/pink-october` carga sus estilos, ilustraciones y botones.
+- `?lang=es` y `?lang=en` muestran el idioma esperado y lo conservan al navegar. Sin parámetro se utiliza el idioma principal del navegador.
+- En mobile se ve el botón Continuar en los pasos principales sin bajar la pantalla. Se permite scroll al abrir las FAQ o los detalles, en señales, con texto ampliado o en pantallas especialmente bajas.
+- Señales muestra doce ilustraciones y Descargar genera la imagen en el idioma correspondiente.
+- Las cuatro preguntas frecuentes aparecen al final.
