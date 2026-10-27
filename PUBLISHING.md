@@ -10,7 +10,7 @@ El repositorio incluye la nueva versión con pantallas adaptadas al alto del cel
 
 1. Sincronizá la última versión publicada del proyecto de Beat (`florpvega/beat-studio`). Conservá su archivo `.openai/hosting.json`, permisos y ruta `/pink-october`.
 2. Reemplazá sólo `public/pink-october/app.js`, `style.css` y `translations.js` por los archivos correspondientes de `site/` en este repositorio.
-3. En el HTML de la ruta existente, actualizá los identificadores de caché existentes a `v=button-faq-20261027` en los recursos para renovar la caché. Conservá los prefijos `/pink-october/`, la ruta y el canonical actuales. `site/index.html` contiene el documento de referencia con los nuevos identificadores de caché.
+3. En el HTML de la ruta existente, actualizá los identificadores de caché existentes a `v=start-label-20261027` en los recursos para renovar la caché. Conservá los prefijos `/pink-october/`, la ruta y el canonical actuales. `site/index.html` contiene el documento de referencia con los nuevos identificadores de caché.
 4. Comprobá la compilación y TypeScript con `npm run build` y `npx tsc --noEmit`.
 5. Publicá el proyecto existente de Beat mediante su flujo habitual de ChatGPT Sites. No se necesita modificar portada, layout, permisos ni DNS.
 
@@ -18,7 +18,7 @@ No vuelvas a ejecutar el instalador original en esta actualización: `npm run in
 
 ## Validación de esta actualización
 
-Fuente de la guía: `1afa40f7310ad86f4b6f8cb48fe9f2608f16393c`.
+Fuente de la guía: `8ef76dca4fe7011a9275efa256e7329df09e1398`.
 
 - Los pasos 0, 1, 2, 3 y 5 entran completos en los tamaños móviles probados, en español e inglés: 320 × 568, 375 × 568, 390 × 664 y 430 × 800 px.
 - Las ilustraciones y los espacios se adaptan al alto disponible. Las señales de alerta conservan el scroll.
