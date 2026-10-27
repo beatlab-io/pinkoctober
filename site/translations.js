@@ -16,7 +16,7 @@ const englishTranslations = {
   'Consultar': 'Get checked',
   'de': 'of',
   'Continuar': 'Continue',
-  'Ver guía': 'Start guide',
+  'Comenzar': 'Start',
   'presioná Enter ↵': 'press Enter ↵',
   'Enter para seguir': 'Press Enter to continue',
   'Un momento para vos': 'A moment for yourself',
