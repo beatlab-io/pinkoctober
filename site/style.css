@@ -275,7 +275,7 @@ body.pink-background #signals-shortcut:hover{background:#0b3c42;border-color:#0b
   .screen:not(.welcome) .eyebrow{font-size:20px;margin-bottom:6px}
   .screen:not(.welcome) .copy>p:not(.eyebrow){font-size:14px;line-height:1.45;margin-bottom:0}
   .screen .cta-row{gap:8px}
-  .screen .cta-row .primary{min-height:44px;padding:10px 22px}
+  .screen:not(.welcome) .cta-row .primary{min-height:44px;padding:10px 22px}
   .screen.welcome{padding-top:10px;gap:12px}
   .welcome .hero-logo{width:clamp(110px,calc(var(--app-height) - 390px),180px)}
   .welcome h1{font-size:clamp(30px,9.5vw,42px);margin-bottom:12px}
